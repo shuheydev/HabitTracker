@@ -12,6 +12,7 @@
             <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
                 <Setter Property="rainbows:DebugRainbow.ShowColors" Value="True" />
                 <Setter Property="rainbows:DebugRainbow.ShowGrid" Value="True" />
+                <Setter Property="rainbows:DebugRainbow.MajorGridLineInterval" Value="5" />
                 <Setter Property="rainbows:DebugRainbow.GridLineColor" Value="Yellow" />
             </Style>
         </ResourceDictionary>
