@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="HabitTracker.App">
+<Application
+    x:Class="HabitTracker.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows"
+    mc:Ignorable="d">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style ApplyToDerivedTypes="True" TargetType="ContentPage">
+                <Setter Property="rainbows:DebugRainbow.ShowColors" Value="True" />
+                <Setter Property="rainbows:DebugRainbow.ShowGrid" Value="True" />
+                <Setter Property="rainbows:DebugRainbow.GridLineColor" Value="Yellow" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
